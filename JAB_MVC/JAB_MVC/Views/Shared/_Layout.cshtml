@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple Blog</title>
+    <link href="~/Css/Default.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <div id="titleBar">
+            <h1>Simple Blog</h1>
+        </div>
+        <div id="menuBar">
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Blog Admin", "Index", "BlogAdmin")</li>
+            </ul>
+            <br style="clear: both" />
+        </div>
+
+        @RenderBody()
+
+        <div class="pageFooter">
+            &copy; Tom Anderson
+        </div>
+    </div>
+</body>
+</html>

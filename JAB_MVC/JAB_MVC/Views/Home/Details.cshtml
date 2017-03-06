@@ -1,0 +1,8 @@
+﻿@model JAB_MVC.ViewModels.BlogPostViewModel
+
+<div class="blogPost">
+    <h3>@Html.ActionLink(Model.PostTitle, "Details")</h3>
+    <p>@Model.PostBody </p>
+    <div class="blogPostDate"><small> @Model.Date</small></div>
+</div>
+

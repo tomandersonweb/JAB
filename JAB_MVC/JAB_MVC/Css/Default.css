@@ -1,0 +1,113 @@
+﻿body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+}
+.homeLink{
+    float:right
+}
+.pageFooter{
+    text-align: right;
+    margin-top: 20px
+}
+h1{
+    color: darkgrey;
+    padding-bottom: 5px;
+}
+#content{
+    width:960px;
+    margin:0 auto;
+    text-align:left;
+}
+
+#menuBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategray;
+}
+
+#menuBar li {
+    float: left;
+}
+
+#menuBar li a {
+    padding: 10px 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menuBar li a:hover {
+    background-color: darkgrey;
+}
+
+a{
+    color:darkgrey
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:current{
+    background-color: darkgrey;
+}
+
+input, textarea{
+    width: 500px
+}
+
+label{
+    width: 100px;
+    display:inline-block;
+    vertical-align:top
+}
+
+textarea{
+    height: 200px
+}
+
+h3{
+  color:black
+}
+
+.blogPostDate{
+    text-align:right;
+    width: 100%
+}
+
+.blogPost{
+    padding-bottom:10px;
+    border-bottom: 1px dotted grey;
+}
+
+.blogPost p{
+}
+
+.createPost{
+}
+
+.editLinks{
+    font-weight:normal;
+    text-align:right;
+    margin-top:0;
+    padding-top:0
+}
+.check-box{
+    width: 20px
+}
+
+button {
+    border: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    font-weight:bold;
+    margin-right: 10px
+}
+
+.errorText{
+    color:red
+}

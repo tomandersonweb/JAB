@@ -1,0 +1,21 @@
+﻿@model IEnumerable<JAB_MVC.ViewModels.BlogPostViewModel>
+
+<div class="createPost">@Html.ActionLink("Create New Blog Post", "Create", "BlogAdmin")</div>
+
+@if (!Model.Any())
+{
+    <p>There no blog posts to edit... </p>
+}
+else
+{
+    foreach (var post in Model)
+    {
+        <div class="blogPost">
+            <h3 >@Html.ActionLink(post.PostTitle, "Edit", new { id = post.Id }) </h3>
+            <p>@post.PostBody </p>
+            <div class="blogPostDate"><small> @post.Date</small></div>
+            <div class="editLinks"> @Html.ActionLink("Edit", "Edit", new { id = post.Id }) @Html.ActionLink("Delete", "Delete", new { id = post.Id })</div>
+        </div>
+  
+    }
+}

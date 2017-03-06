@@ -1,0 +1,18 @@
+﻿@model IEnumerable<JAB_MVC.ViewModels.BlogPostViewModel>
+
+@if (!Model.Any())
+{
+    <p>There no blog posts to view yet... </p>
+}
+else
+{
+    foreach (var post in Model)
+    {
+        <div class="blogPost">
+            <h3>@Html.ActionLink(post.PostTitle, "Details", new { id = post.Id })</h3>
+            <p>@post.PostBody </p>
+            <div class="blogPostDate"><small> @post.Date</small></div>
+        </div>
+
+    }
+}

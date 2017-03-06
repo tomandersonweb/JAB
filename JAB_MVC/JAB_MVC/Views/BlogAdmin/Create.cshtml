@@ -1,0 +1,17 @@
+﻿@model JAB_MVC.ViewModels.BlogPostViewModel
+
+<h3>Blog Admin - Create Post</h3>
+
+<form method="post">
+    @Html.ValidationSummary(false, "", new { @class = "errorText" })
+    <div style="padding: 5px">
+        @Html.LabelFor(x => x.PostTitle) @Html.EditorFor(x => x.PostTitle)
+    </div>
+    <div style="padding: 5px">
+        @Html.LabelFor(x => x.PostBody) @Html.TextAreaFor(x => x.PostBody)
+    </div>
+    <div style="padding: 5px">
+        @Html.LabelFor(x => Model.Publish) @Html.EditorFor(x => Model.Publish)
+    </div>
+    <label></label><button type="submit">Submit</button>
+</form>
